@@ -16,4 +16,5 @@ namespace LinkedListProblem
             this.data = data;
             next = null;
         }
+    }
 }
