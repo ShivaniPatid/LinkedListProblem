@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AddElementInLikedList.cs" />
     <Compile Include="DeleteFirstElementInLinkedList.cs" />
+    <Compile Include="DeleteLastElementInLinkedList.cs" />
     <Compile Include="InsertElementInLinkedList.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
