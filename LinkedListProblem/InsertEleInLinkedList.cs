@@ -8,7 +8,6 @@ namespace LinkedListProblem
 {
     public class InsertEleInLinkedList
     {
-
         Node head;
 
         public void Add(int newData)
@@ -71,32 +70,6 @@ namespace LinkedListProblem
                 newNode.next = tempNode.next;
                 tempNode.next = newNode;
 
-            }
-        }
-
-        public void Insert(int data)
-        {
-            Node newNode = new Node(data);
-            newNode.data = data;
-            newNode.next = null;
-            { 
-                Node temp = this.head;
-                if (temp != null)
-                {
-                    while (temp != null)
-                    {
-                        Node tempNode = new Node(data);
-                        tempNode = this.head;
-                        if (temp.data == 30)
-                        {
-                            tempNode = tempNode.next;
-                            
-                        }
-                        newNode.next = tempNode.next;
-                        tempNode.next = newNode;
-                        temp = temp.next;
-                    }
-                }
             }
         }
     }
