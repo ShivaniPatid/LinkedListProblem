@@ -10,7 +10,7 @@ namespace LinkedListProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose a option\n 1. Add an elements in linked list\n 4. Insert an element in between linked list\n 5. Delete a first element in linked list\n 6. Delete last element in the linked list ");
+            Console.WriteLine("Choose a option\n 1. Add an elements in linked list\n 4. Insert an element in between linked list\n 5. Delete a first element in linked list\n 6. Delete last element in the linked list\n 7. Search linked list to find node");
             int option=Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (option)
@@ -46,6 +46,13 @@ namespace LinkedListProblem
                     list6.DeleteLastNode();
                     Console.WriteLine("Before deleted the first element in linked list : ");
                     list6.Display();
+                    break;
+                case 7:
+                    SearchNodeInLinkedList list7 = new SearchNodeInLinkedList();
+                    list7.Add(56);
+                    list7.Add(30);
+                    list7.Add(70);
+                    list7.Search(30);
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
